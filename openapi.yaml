@@ -4,7 +4,7 @@ info:
   description: Returns reviews from Supabase
   version: '1.0.0'
 servers:
-  - url: https://roovzqstfwpvvybejjss.supabase.co/functions/
+  - url: https://roovzqstfwpvvybejjss.supabase.co/functions/v1
 paths:
   /smooth-processor:
     post:
