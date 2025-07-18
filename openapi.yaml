@@ -1,0 +1,27 @@
+openapi: 3.1.0
+info:
+  title: Okendo Reviews API
+  description: Returns reviews from Supabase
+  version: '1.0.0'
+servers:
+  - url: https://roovzqstfwpvvybejjss.supabase.co/functions/
+paths:
+  /smooth-processor:
+    post:
+      summary: Fetch Okendo reviews from Supabase
+      operationId: fetchOkendoReviews
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                productId:
+                  type: string
+      responses:
+        '200':
+          description: A list of reviews
+          content:
+            application/json:
+              schema:
+                type: object
